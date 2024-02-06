@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/1f9d7c9f38.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <title>Razz Store</title>
+  </head>
+  <body>
+    <!-- header section start -->
+
+    <header class="header">
+      <a href="#footer" class="logo">
+        <i class="fa-solid fa-basket-shopping">
+          <h2>Razz Store</h2>
+        </i>
+      </a>
+
+      <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#features">features</a>
+        <a href="#products">products</a>
+        <a href="#categories">categories</a>
+        <a href="#review">review</a>
+      </nav>
+
+      <div class="icons">
+        <div class="fa-solid fa-bars" id="menu-btn"></div>
+        <div class="fa-solid fa-magnifying-glass" id="search-btn"></div>
+        <div class="fa-solid fa-cart-arrow-down" id="cart-btn"></div>
+        <div class="fa-solid fa-user" id="login-btn"></div>
+      </div>
+
+      <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="search here ...." />
+        <label for="search-box" class="fa-solid fa-magnifying-glass"></label>
+      </form>
+
+      <div class="shopping-cart">
+        <div class="cart-contentku"></div>
+
+        <div class="total">total : $ 0</div>
+        <a href="#cart-btn" class="btn buyButton">checkout</a>
+      </div>
+
+      <form method="POST" class="login-form" id="form">
+        <h3>Login now</h3>
+        <div>
+          <input
+            type="email"
+            required
+            placeholder=" your email"
+            class="box"
+            id="email"
+          />
+        </div>
+        <div>
+          <input
+            type="password"
+            required
+            placeholder=" your password"
+            class="box"
+            id="password"
+          />
+        </div>
+        
+        <div><button class="btn" id="button">Login Now</button></div>
+      </form>
+    </header>
+    <!-- header section end -->
+
+    <!-- main section starts -->
+    <main>
+      <article class="home" id="home">
+        <div class="content">
+          <h3>
+            Experience the Essence of <span>Fresh and Organic</span> Products
+          </h3>
+          <p>
+            Elevate your lifestyle with our premium organic products. Immerse
+            yourself in the natural goodness and indulge in a healthier, tastier
+            way of living.
+          </p>
+          <a href="#products" class="btn">Shop Now</a>
+        </div>
+      </article>
+
+     
+
+      <!-- features section starts  -->
+
+      <article class="features" id="features">
+        <h1 class="heading">our <span>features</span></h1>
+
+        <div class="box-container">
+          <div class="box">
+            <img src="image/feature-img-1.png" alt="" />
+            <h3>fresh and organic</h3>
+            <p>
+              Explore the freshness and quality of our organic products. We
+              source the finest ingredients to ensure a delightful and healthy
+              experience for you.
+            </p>
+            <a href="#" class="btn">read more</a>
+          </div>
+
+          <div class="box">
+            <img src="image/feature-img-2.png" alt="" />
+            <h3>free delivery</h3>
+            <p>
+              Enjoy the convenience of free delivery on all your orders. We
+              believe in making your shopping experience seamless and
+              cost-effective.
+            </p>
+            <a href="#" class="btn">read more</a>
+          </div>
+
+          <div class="box">
+            <img src="image/feature-img-3.png" alt="" />
+            <h3>easy payments</h3>
+            <p>
+              Simplify your transactions with our easy and secure payment
+              options. We strive to provide a hassle-free payment experience for
+              your convenience.
+            </p>
+            <a href="#" class="btn">read more</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- products section starts  -->
+
+      <article class="products" id="products">
+        <h1 class="heading">our <span>products</span></h1>
+
+        <div class="swiper product-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+              <div class="box-shop">
+                <img
+                  src="image/product-1.png"
+                  alt=""
+                  class="product-image"
+                  id="fruits"
+                />
+                <h3 class="product-title">fresh orange</h3>
+                <div class="desk">
+                  <p>
+                    Oranges are citrus fruits with fragrant, leathery skin and
+                    juicy flesh. The most common types are the sweet (or common)
+                    orange, the sour (or Seville) orange, and the mandarin
+                    orange. The sweet orange is the most widely grown citrus
+                    fruit in the world.
+                  </p>
+                </div>
+                <div class="price" id="price-product">$4.99</div>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <i id="add-cart" class="btn">add to cart</i>
+              </div>
+            </div>
+
+            <div class="swiper-slide box">
+              <img src="image/pinapple.png" alt="" class="product-image" />
+              <h3 class="product-title">fresh pineapple</h3>
+              <div class="desk">
+                <p>
+                  Sweet, Juicy fruits. They grow on a plant with the scientific
+                  name Ananas comosus. Ananas means “excellent fruit” in an
+                  Indian language from South America. Pineapples grow in
+                  tropical (warm) areas around the world
+                </p>
+              </div>
+              <div class="price" id="price-product">$4.99</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <i id="add-cart" class="btn">add to cart</i>
+            </div>
+
+            <div class="swiper-slide box">
+              <img src="image/grapes.png" alt="" class="product-image" />
+              <h3 class="product-title">fresh grape</h3>
+              <div class="desk">
+                <p>
+                  Grapes are fleshy, rounded fruits that grow in clusters made
+                  up of many fruits of greenish, yellowish or purple skin. The
+                  pulp is juicy and sweet, and it contain several seeds or pips.
+                </p>
+              </div>
+              <div class="price" id="price-product">$4.99</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <i id="add-cart" class="btn">add to cart</i>
+            </div>
+
+            <div class="swiper-slide box">
+              <img src="image/product-6.png" alt="" class="product-image" />
+              <h3 class="product-title">fresh avocado</h3>
+              <div class="desk">
+                <p>
+                  An avocado is a bright green fruit with a large pit and dark
+                  leathery skin. They're also known as alligator pears or butter
+                  fruit. Avocados are a favorite of the produce section. They're
+                  the go-to ingredient for guacamole dips.
+                </p>
+              </div>
+              <div class="price" id="price-product">$4.99</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <i id="add-cart" class="btn">add to cart</i>
+            </div>
+
+            <div class="swiper-slide box">
+              <img src="image/apel.png" alt="" class="product-image" />
+              <h3 class="product-title">fresh apple</h3>
+              <div class="desk">
+                <p>
+                  Apple is a sweet and delicious fruit that is very healthy. It
+                  is also a good disease-fighter and we can eat it every day.
+                  The delicious taste and bright colour of the food make it even
+                  more appealing. Moreover, it is a versatile fruit which we can
+                  use in many dishes.
+                </p>
+              </div>
+              <div class="price" id="price-product">$4.99</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <i id="add-cart" class="btn">add to cart</i>
+            </div>
+
+            <div class="swiper-slide box">
+              <img src="image/pisang.png" alt="" class="product-image" />
+              <h3 class="product-title">fresh banana</h3>
+              <div class="desk">
+                <p>
+                  A banana is a curved, yellow fruit with a thick skin and soft
+                  sweet flesh. If you eat a banana every day for breakfast, A
+                  banana is a tropical fruit that's quite popular all over the
+                  world. It grows in bunches on a banana tree.
+                </p>
+              </div>
+              <div class="price" id="price-product">$4.99</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <i id="add-cart" class="btn">add to cart</i>
+            </div>
+
+            <div class="swiper-slide box">
+              <img src="image/product-8.png" alt="" class="product-image" />
+              <h3 class="product-title">fresh lemon</h3>
+              <div class="desk">
+                <p>
+                  Lemons are shaped like an oval with a bump on one end. Their
+                  rind, or skin, is thick. It starts out green and turns yellow
+                  when the fruit is ripe. Inside each fruit is juicy flesh
+                  called pulp.
+                </p>
+              </div>
+              <div class="price" id="price-product">$4.99</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <i id="add-cart" class="btn">add to cart</i>
+            </div>
+
+            <div class="swiper-slide box">
+              <img src="image/watermelonku.png" alt="" class="product-image" />
+              <h3 class="product-title">fresh watermelon</h3>
+              <div class="desk">
+                <p>
+                  A watermelon is a large, oval fruit with green skin; sweet,
+                  juicy pulp; and seeds. Although red watermelons are the most
+                  common ones we see, they come in other colors, too, like
+                  orange, yellow and white.
+                </p>
+              </div>
+              <div class="price" id="price-product">$4.99</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <i id="add-cart" class="btn">add to cart</i>
+            </div>
+
+            <div class="swiper-slide box">
+              <img src="image/stoberi.png" alt="" class="product-image" />
+              <h3 class="product-title">fresh strawberry</h3>
+              <div class="desk">
+                <p>
+                  Strawberries are soft, sweet, bright red berries. They're also
+                  delicious. Strawberries have tiny edible seeds, which grow all
+                  over their surface. When ripe, strawberries smell wonderful
+                  and taste even better.
+                </p>
+              </div>
+              <div class="price" id="price-product">$4.99</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <i id="add-cart" class="btn">add to cart</i>
+            </div>
+
+            <div class="swiper-slide box">
+              <img src="image/mango.png" alt="" class="product-image" />
+              <h3 class="product-title">fresh mango</h3>
+              <div class="desk">
+                <p>
+                  A mango is a sweet tropical fruit, and it's also the name of
+                  the trees on which the fruit grows. Ripe mangoes are juicy,
+                  fleshy, and delicious. mangoes have an inedible pit at the
+                  center. Unlike these other fruits, the skin of a mango is very
+                  tough and also inedible.
+                </p>
+              </div>
+              <div class="price" id="price-product">$4.99</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <i id="add-cart" class="btn">add to cart</i>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper product-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+              <div class="box-shop">
+                <img
+                  src="image/product-2.png"
+                  alt=""
+                  class="product-image"
+                  id="vegetable"
+                />
+                <h3 class="product-title">fresh onion</h3>
+                <div class="desk">
+                  <p>
+                    An onion is a round vegetable with a brown skin that grows
+                    underground. It has many white layers on its inside which
+                    have a strong, sharp smell and taste.
+                  </p>
+                </div>
+                <div class="price" id="price-product">$4.99</div>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <i id="add-cart" class="btn">add to cart</i>
+              </div>
+            </div>
+
+            <div class="swiper-slide box">
+              <div class="box-shop">
+                <img src="image/product-3.png" alt="" class="product-image" />
+                <h3 class="product-title">fresh meat</h3>
+                <div class="desk">
+                  <p>
+                    Oranges are citrus fruits with fragrant, leathery skin and
+                    juicy flesh. The most common types are the sweet (or common)
+                    orange, the sour (or Seville) orange, and the mandarin
+                    orange. The sweet orange is the most widely grown citrus
+                    fruit in the world.
+                  </p>
+                </div>
+                <div class="price" id="price-product">$4</div>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <i id="add-cart" class="btn">add to cart</i>
+              </div>
+            </div>
+
+            <div class="swiper-slide box">
+              <img src="image/product-4.png" alt="" class="product-image" />
+              <h3 class="product-title">fresh cabbage</h3>
+              <div class="desk">
+                <p>
+                  All forms of cabbage have succulent leaves that are free of
+                  hairs and covered with a waxy coating, which often gives the
+                  leaf surface a gray-green or blue-green colour.
+                </p>
+              </div>
+              <div class="price" id="price-product">$4.99</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <i id="add-cart" class="btn">add to cart</i>
+            </div>
+
+            <div class="swiper-slide box">
+              <img src="image/product-5.png" alt="" class="product-image" />
+              <h3 class="product-title">fresh potato</h3>
+              <div class="desk">
+                <p>
+                  The potato is a starchy food, a tuber of the plant Solanum
+                  tuberosum and is a root vegetable native to the Americas. The
+                  plant is a perennial in the nightshade family Solanaceae.
+                </p>
+              </div>
+              <div class="price" id="price-product">$6</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <i id="add-cart" class="btn">add to cart</i>
+            </div>
+
+            <div class="swiper-slide box">
+              <img
+                src="image/sayur.png"
+                alt=""
+                class="product-image"
+                style="width: fit-content"
+              />
+              <h3 class="product-title">fresh broccoli</h3>
+              <div class="desk">
+                <p>
+                  It has a grassy, earthy flavor that's mildly bitter. And while
+                  we most often reach for the florets, the whole plant is
+                  edible. Additionally, there are many different ways to cook
+                  broccoli at home.
+                </p>
+              </div>
+              <div class="price" id="price-product">$4.99</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <i id="add-cart" class="btn">add to cart</i>
+            </div>
+
+            <div class="swiper-slide box">
+              <img src="image/product-7.png" alt="" class="product-image" />
+              <h3 class="product-title">fresh carrot</h3>
+              <div class="desk">
+                <p>
+                  Carrots are firm and crisp. The skin is mostly smooth, but it
+                  may have wrinkles that go from side to side. Carrots grow
+                  where the temperature is cool to warm. They grow best in soil
+                  that is loose.
+                </p>
+              </div>
+              <div class="price" id="price-product">$10.99</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <i id="add-cart" class="btn">add to cart</i>
+            </div>
+
+            <div class="swiper-slide box">
+              <img src="image/product-8.png" alt="" class="product-image" />
+              <h3 class="product-title">green lemon</h3>
+              <div class="desk">
+                <p>
+                  Lemons are shaped like an oval with a bump on one end. Their
+                  rind, or skin, is thick. It starts out green and turns yellow
+                  when the fruit is ripe. Inside each fruit is juicy flesh
+                  called pulp.
+                </p>
+              </div>
+              <div class="price" id="price-product">$11.99</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <i id="add-cart" class="btn">add to cart</i>
+            </div>
+
+            <div class="swiper-slide box">
+              <img src="image/tomato.png" alt="" class="product-image" />
+              <h3 class="product-title">fresh tomato</h3>
+              <div class="desk">
+                <p>
+                  They are usually red, scarlet, or yellow, though green and
+                  purple varieties do exist, and they vary in shape from almost
+                  spherical to oval and elongate to pear-shaped.
+                </p>
+              </div>
+              <div class="price" id="price-product">$11.99</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <i id="add-cart" class="btn">add to cart</i>
+            </div>
+
+            <div class="swiper-slide box">
+              <img src="image/celery.png" alt="" class="product-image" />
+              <h3 class="product-title">fresh celery</h3>
+              <div class="desk">
+                <p>
+                  It has a furrowed stalk with wedge-shaped leaves, the whole
+                  plant having a coarse, rank taste, and a peculiar smell.
+                </p>
+              </div>
+              <div class="price" id="price-product">$11.99</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <i id="add-cart" class="btn">add to cart</i>
+            </div>
+
+            <div class="swiper-slide box">
+              <img src="image/greenbean.png" alt="" class="product-image" />
+              <h3 class="product-title">fresh green bean</h3>
+              <div class="desk">
+                <p>
+                  Green beans are vegetables that grow on vines during the
+                  summer and fall months. They are also called string beans or
+                  snap beans.
+                </p>
+              </div>
+              <div class="price" id="price-product">$11.99</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <i id="add-cart" class="btn">add to cart</i>
+            </div>
+
+            <div class="swiper-slide box">
+              <img src="image/cucumber.png" alt="" class="product-image" />
+              <h3 class="product-title">fresh cucumber</h3>
+              <div class="desk">
+                <p>
+                  A creeping vine that has roots in the ground and stems that
+                  climb using thin, curly tendrils for support. It has large
+                  leaves and bright yellow flowers that form long, green fruit
+                  with tapered ends.
+                </p>
+              </div>
+              <div class="price" id="price-product">$11.99</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <i id="add-cart" class="btn">add to cart</i>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- products section ends -->
+
+      <!--  categories section starts  -->
+
+      <article class="categories" id="categories">
+        <h1 class="heading">product <span>categories</span></h1>
+
+        <div class="box-container">
+          <div class="box">
+            <img src="image/cat-1.png" alt="" />
+            <h3>vegitables</h3>
+            <p>upto 45% off</p>
+            <a href="#vegetable" class="btn">shop now</a>
+          </div>
+
+          <div class="box">
+            <img src="image/cat-2.png" alt="" />
+            <h3>fresh fruits</h3>
+            <p>upto 45% off</p>
+            <a href="#fruits" class="btn">shop now</a>
+          </div>
+
+          <div class="box">
+            <img src="image/cat-4.png" alt="" />
+            <h3>fresh meat</h3>
+            <p>upto 45% off</p>
+            <a href="#vegetable" class="btn">shop now</a>
+          </div>
+        </div>
+      </article>
+      <!--  categories section ends  -->
+
+      <!-- review section starts-->
+
+      <article id="review" class="review">
+        <h1 class="heading">Customers' <span>Reviews</span></h1>
+      
+        <div class="swiper review-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+              <img src="image/pic-1.png" alt="" />
+              <p>
+                "The products from this store are amazing! I love the quality and freshness. It's always a delightful experience shopping here."
+              </p>
+              <h3>Yasser Ibrahim</h3>
+      
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+      
+            <div class="swiper-slide box">
+              <img src="image/pic-2.png" alt="" />
+              <p>
+                "The variety of organic products is impressive. I appreciate the commitment to quality and the prompt delivery service."
+              </p>
+              <h3>Yassmeen Sabri</h3>
+      
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+      
+            <div class="swiper-slide box">
+              <img src="image/pic-3.png" alt="" />
+              <p>
+                "I've been a loyal customer, and the consistency in quality is commendable. Highly recommended for those who appreciate organic goodness."
+              </p>
+              <h3>Ayman Ashraf</h3>
+      
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+      
+            <div class="swiper-slide box">
+              <img src="image/pic-4.png" alt="" />
+              <p>
+                "The freshness of the products is unmatched. Great customer service and a wide range of options. I'm a satisfied customer!"
+              </p>
+              <h3>Mona Zaki</h3>
+      
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      
+
+      <aside class="profile">
+        <div class="profile-card">
+          <div class="image">
+            <img src="image/fotolinkedin.jpg" alt="" class="profile-pic">
+          </div>
+          <div class="data">
+            <h2>Yasa Kafi Razzan</h2>
+            <span>FrontEnd Dev Web & Mobile</span>
+          </div>
+          
+          
+        </div>
+      </aside>
+    </main>
+
+    <!-- footer section starts  -->
+
+    <footer class="footer" id="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>Razz Store <i class="fas fa-shopping-basket"></i></h3>
+          <p>
+            Selamat datang di Razz Store, tempatnya untuk menemukan produk
+            berkualitas tinggi dan layanan yang memuaskan. Kami berkomitmen
+            memberikan pengalaman belanja terbaik bagi pelanggan kami.
+          </p>
+          <div class="share">
+            <a
+              href="https://web.facebook.com/yasa.razzan.3"
+              class="fab fa-facebook-f"
+            ></a>
+            <a href="https://twitter.com/YasaKafi" class="fab fa-twitter"></a>
+            <a
+              href="https://www.instagram.com/yaskrazz/"
+              class="fab fa-instagram"
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/yasa-razzan-189b56260/"
+              class="fab fa-linkedin"
+            ></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <h3>contact info</h3>
+          <a href="#" class="links">
+            <i class="fas fa-phone"></i> +62-813-9183-1907
+          </a>
+          <a href="#" class="links">
+            <i class="fas fa-phone"></i> +62-895-2568-3801
+          </a>
+          <a href="mailto:yasazerina@gmail.com" class="links">
+            <i class="fas fa-envelope"></i> yasazerina@gmail.com
+          </a>
+          <a
+            href="https://www.google.co.id/maps/place/Kabupaten+Kudus,+Jawa+Tengah/@-6.7972888,110.727545,11z/data=!3m1!4b1!4m5!3m4!1s0x2e70c532064fbb8f:0x3027a76e352bb30!8m2!3d-6.7726186!4d110.8791343"
+            class="links"
+          >
+            <i class="fas fa-map-marker-alt"></i> Kudus, Indonesia - 71839
+          </a>
+        </div>
+
+        <div class="box">
+          <h3>quick links</h3>
+          <a href="#" class="links">
+            <i class="fas fa-arrow-right"></i> home
+          </a>
+          <a href="#" class="links">
+            <i class="fas fa-arrow-right"></i> features
+          </a>
+          <a href="#" class="links">
+            <i class="fas fa-arrow-right"></i> products
+          </a>
+          <a href="#" class="links">
+            <i class="fas fa-arrow-right"></i> categories
+          </a>
+          <a href="#" class="links">
+            <i class="fas fa-arrow-right"></i> review
+          </a>
+        </div>
+      </div>
+
+      <div class="credit">
+        created by <span> yaskrazz </span> | all rights reserved
+      </div>
+    </footer>
+
+    <!-- footer section ends -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
